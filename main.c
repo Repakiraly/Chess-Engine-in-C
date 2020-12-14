@@ -13,7 +13,7 @@ int main() {
 
     S_BOARD board[1];
 
-    ParseFen(PBLACK,board);
+    ParseFen(PAWN,board);
     PrintBoard(board);
 
     S_MOVELIST list[1];

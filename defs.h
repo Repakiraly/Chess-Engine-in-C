@@ -151,6 +151,7 @@ extern U64 ClearMask[64];
 extern U64 PieceKeys[13][120];
 extern U64 SideKey;
 extern U64 CastleKeys[16];
+
 extern char PceChar[];
 extern char SideChar[];
 extern char RankChar[];
@@ -169,6 +170,7 @@ extern int PieceKnight[13];
 extern int PieceKing[13];
 extern int PieceRookQueen[13];
 extern int PieceBishopQueen[13];
+extern int PieceSlides[13];
 
 /* FUNCTIONS */
 
