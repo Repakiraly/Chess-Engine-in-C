@@ -52,10 +52,10 @@ enum { WKCA = 1, WQCA = 2, BKCA = 4, BQCA = 8 };
 typedef struct {
     int move;
     int score;
-} S_MOVES;
+} S_MOVE;
 
 typedef struct {
-    S_MOVES moves[MAXPOSITIONMOVES];
+    S_MOVE moves[MAXPOSITIONMOVES];
     int count;
 } S_MOVELIST;
 
@@ -199,6 +199,17 @@ extern void ShowSqAtBySide(const int side, const S_BOARD *pos);
 //io.c
 extern char *PrMove (const int move);
 extern char *PrSq(const int sq);
+extern void PrintMoveList(const S_MOVELIST *list);
+
+//movegen.c
+extern void GenerateAllMoves(const S_BOARD *pos, S_MOVELIST *list);
+
+//validate.c
+extern int SqOnBoard(const int sq);
+extern int SideValid(const int side);
+extern int FileValid(const int fr);
+extern int PieceValidEmpty(const int pce);
+extern int PieceValid(const int pce);
 #endif
 
 

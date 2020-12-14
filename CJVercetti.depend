@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1606513479 source:d:\programming\c\cjvercetti\cjvercetti\main.c
+1607890455 source:d:\programming\c\cjvercetti\cjvercetti\main.c
 	<stdio.h>
 	<stdlib.h>
 	"defs.h"
 
-1606513612 d:\programming\c\cjvercetti\cjvercetti\defs.h
+1607889340 d:\programming\c\cjvercetti\cjvercetti\defs.h
 	"stdlib.h"
 
 1604347437 source:d:\programming\c\cjvercetti\cjvercetti\init.c
@@ -27,18 +27,21 @@
 1604347437 source:d:\programming\c\cjvercetti\cjvercetti\data.c
 	"defs.h"
 
-1604843567 source:d:\programming\c\cjvercetti\cjvercetti\attack.c
+1607886493 source:d:\programming\c\cjvercetti\cjvercetti\attack.c
 	"defs.h"
 
 1604844249 source:d:\programming\c\cjvercetti\cjvercetti\debug.c
 	"defs.h"
 	<stdio.h>
 
-1606513336 source:d:\programming\c\cjvercetti\cjvercetti\io.c
+1607889341 source:d:\programming\c\cjvercetti\cjvercetti\io.c
 	<stdio.h>
 	"defs.h"
 
-1606513317 source:d:\programming\c\cjvercetti\cjvercetti\movegen.c
+1607890050 source:d:\programming\c\cjvercetti\cjvercetti\movegen.c
 	<stdio.h>
+	"defs.h"
+
+1607886392 source:d:\programming\c\cjvercetti\cjvercetti\validate.c
 	"defs.h"
 

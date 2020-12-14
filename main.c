@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "defs.h"
 
+#define PAWN "rnbqkb1r/pp1p1pPp/8/2p1pP2/1P1P4/3P3P/P1P1P3/RNBQKBNR w KQkq e6 0 1"
+#define PBLACK "rnbqkbnr/p1p1p3/3p3p/1p1p4/2P1Pp2/8/PP1P1PpP/RNBQKB1R b - e3 0 1"
 
 
 int main() {
@@ -9,21 +11,16 @@ int main() {
     printf("My name is CJ Vercetti\nNice to meet you friend!\n");
     AllInit();
 
-	int move = 0;
-	int from = A2;
-	int to = H1;
-	int cap = wR;
-	int prom = bN;
+    S_BOARD board[1];
 
-	move = (( from ) | ( to << 7 ) | ( cap << 14) | ( prom << 20));
+    ParseFen(PBLACK,board);
+    PrintBoard(board);
 
-	printf("from: %d to: %d cap:%d prom:%d\n",
-            FROMSQ(move),TOSQ(move),CAPTURED(move),
-            PROMOTED(move));
-    printf("Algebraic from: %s\n", PrSq(from));
-    printf("Algebraic to: %s\n", PrSq(to));
-    printf("Algebraic move: %s\n", PrMove(move));
+    S_MOVELIST list[1];
 
+    GenerateAllMoves(board,list);
+
+    PrintMoveList(list);
 
 	return 0;
 }

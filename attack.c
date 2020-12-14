@@ -10,6 +10,10 @@ int SqAttacked(const int sq, const int side, const S_BOARD *pos) {
 
     int pce, index, t_sq, dir = 0;
 
+    ASSERT(SqOnBoard(sq));
+    ASSERT(SideValid(side));
+    ASSERT(CheckBoard(pos));
+
     //pawns
     if(side == WHITE){
         if((pos->pieces[sq-11] == wP) || (pos->pieces[sq+11] == wP)) {
